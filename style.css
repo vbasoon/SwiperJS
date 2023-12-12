@@ -83,7 +83,6 @@ button {
   align-items: center;
   position: relative;
   height: 428px;
-  border: 2px solid green;
   min-width: 0;
   
 }
@@ -95,7 +94,7 @@ button {
   align-items: center;
   justify-content: center;
   height: 358px;
-  border: 2px solid blue;
+  
 }
 
 .mySwiper .swiper-slide {
@@ -134,7 +133,7 @@ button {
   opacity: 1;
   z-index: 4;
   background-color: transparent;
-  border: 2px solid #000;
+  border: 2px solid #2D69F1;
 }
     
 .mySwiper .swiper-slide .slide-thumb {
