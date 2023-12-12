@@ -44,8 +44,8 @@ button {
 
 .swiper-container {
   display: flex;
-  justify-content: space-between;
-  font-size: 0;
+  gap: 30px;
+  
   
 }
 
@@ -62,16 +62,15 @@ button {
 }
 
 .mySwiper2 {
-  flex-grow: 1;
-  height: 502px;
   width: 868px;
-  margin-right: 20px;
+  height: 502px;
+  
 }
 
 .mySwiper {
   position: relative;
-  flex-grow: 1;
-  height: 100%;
+  height: 502px;
+  
   
   
 }
