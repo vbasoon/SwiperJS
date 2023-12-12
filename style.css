@@ -39,68 +39,54 @@ button {
   max-width: 1056px;
   height: 500px;
   margin: 0 auto;
-  
-  padding: 20px;
 }
+
 .swiper-container {
   display: flex;
-  align-items: center;
-  max-width: 1057px;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .swiper {
-  width: 600px;
-  height: 900px;
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
 
-    
+.mySwiper2 {
+  height: 502px;
+  width: 868px;
+  margin-right: 20px;
+}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    
-
-    .swiper {
-      width: 100%;
-      height: 300px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .swiper-slide {
-      background-size: cover;
-      background-position: center;
-    }
-
-    .mySwiper2 {
-      height: 502px;
-      width: 868px;
-      margin-right: 20px;
-    }
-
-    .mySwiper {
-      position: relative;
-      height: 100%;
-      box-sizing: border-box;
-      padding: 20px 0;
-    }
+.mySwiper {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  
+}
 
     .mySwiper .swiper-slide {
       width: 162px;
@@ -119,17 +105,7 @@ button {
       object-fit: cover;
     }
 
-    .swiper-navigation {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      min-height: 850px;
-      
-      border: 2px solid red;
-    }
+    
 
     .swiper-button-prev,
     .swiper-button-next {
