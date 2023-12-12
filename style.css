@@ -76,15 +76,38 @@ button {
 }
 
 .mySwiper .swiper-slide {
+  position: relative;
   width: 162px;
   height: 96px;
+  z-index: 1;
+  margin-bottom: 10px;
+
+}
+
+.mySwiper .swiper-slide::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  z-index: 3;
   opacity: 0.4;
 }
 
 .mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
+  position: relative;
+  
 }
 
+.mySwiper .swiper-slide-thumb-active::after {
+  position: absolute;
+  content: '';
+  opacity: 1;
+  z-index: 4;
+  background-color: transparent;
+}
     
 
     
