@@ -39,21 +39,19 @@ button {
   max-width: 1056px;
   height: 500px;
   margin: 0 auto;
+  
 }
 
 .swiper-container {
   display: flex;
-  width: 100%;
-  height: 100%;
+  justify-content: space-between;
+  font-size: 0;
+  
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .swiper-slide img {
@@ -63,19 +61,8 @@ button {
   object-fit: cover;
 }
 
-.swiper {
-  width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
-}
-
 .mySwiper2 {
+  flex-grow: 1;
   height: 502px;
   width: 868px;
   margin-right: 20px;
@@ -83,27 +70,23 @@ button {
 
 .mySwiper {
   position: relative;
+  flex-grow: 1;
   height: 100%;
-  box-sizing: border-box;
+  
   
 }
 
-    .mySwiper .swiper-slide {
-      width: 162px;
-      height: 96px;
-      opacity: 0.4;
-    }
+.mySwiper .swiper-slide {
+  width: 162px;
+  height: 96px;
+  opacity: 0.4;
+}
 
-    .mySwiper .swiper-slide-thumb-active {
-      opacity: 1;
-    }
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    
 
     
 
@@ -117,12 +100,13 @@ button {
     .swiper-button-prev {
       position: absolute;
       top: 0px;
-      left: 60px;
+      left: 65px;
       transform: rotate(90deg);
     }
 
     .swiper-button-next {
-      bottom: 0px;
-      left: 60px;
+      position: absolute;
+      bottom: 100px;
+      left: 65px;
       transform: rotate(90deg);
     }
