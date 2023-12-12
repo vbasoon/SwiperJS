@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+/*-------- Main CSS --------*/
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +25,8 @@ ul {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  height: 92px;
   object-fit: cover;
 }
 
@@ -35,9 +38,11 @@ button {
   font-size: 12px;
 }
 
+/*------- Sliders ------------*/
+
 .section-slider {
   max-width: 1056px;
-  height: 500px;
+  
   margin: 0 auto;
   
 }
@@ -61,18 +66,23 @@ button {
   object-fit: cover;
 }
 
+/* -------- Slider 1 --------- */
+
 .mySwiper2 {
   width: 868px;
   height: 502px;
   
 }
 
+/* --------- Slider 2 --------- */
+
 .mySwiper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   position: relative;
-  height: 502px;
+  height: 428px;
   border: 2px solid green;
   min-width: 0;
   
@@ -83,17 +93,22 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 398px;
+  justify-content: center;
+  height: 358px;
+  border: 2px solid blue;
 }
 
 .mySwiper .swiper-slide {
   position: relative;
   width: 160px;
-  height: 92px;
+  height: 92px !important;
   z-index: 1;
-  margin-bottom: 10px;
-  flex-grow: 0;
+  margin-bottom: 18px;
+  
+}
+
+.mySwiper .swiper-slide:first-of-type {
+  margin-top: 80px;
 }
 
 .mySwiper .swiper-slide::after {
@@ -119,10 +134,17 @@ button {
   opacity: 1;
   z-index: 4;
   background-color: transparent;
+  border: 2px solid #000;
+}
+    
+.mySwiper .swiper-slide .slide-thumb {
+  display: block;
+  height: 92px !important;
+  flex-shrink: 1;
 }
     
 
-    
+/* -------- Slider Navigation ------- */
 
     .swiper-button-prev,
     .swiper-button-next {
@@ -137,7 +159,7 @@ button {
       left: 0;
       right: 0;
       transform: rotate(90deg);
-      color: red;
+      
     }
 
     .swiper-button-next {
@@ -145,5 +167,5 @@ button {
       left: 0;
       right: 0;
       transform: rotate(90deg);
-      color: blue;
+      
     }
