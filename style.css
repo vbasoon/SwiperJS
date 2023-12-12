@@ -68,20 +68,32 @@ button {
 }
 
 .mySwiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   height: 502px;
+  border: 2px solid green;
+  min-width: 0;
   
-  
-  
+}
+
+.mySwiper .swiper-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 398px;
 }
 
 .mySwiper .swiper-slide {
   position: relative;
-  width: 162px;
-  height: 96px;
+  width: 160px;
+  height: 92px;
   z-index: 1;
   margin-bottom: 10px;
-
+  flex-grow: 0;
 }
 
 .mySwiper .swiper-slide::after {
@@ -114,21 +126,24 @@ button {
 
     .swiper-button-prev,
     .swiper-button-next {
-      
+      position: relative;
+      margin: 0 auto;
     }
 
 
 
     .swiper-button-prev {
-      position: absolute;
-      top: 0px;
-      left: 65px;
+      top: -10px;
+      left: 0;
+      right: 0;
       transform: rotate(90deg);
+      color: red;
     }
 
     .swiper-button-next {
-      position: absolute;
-      bottom: 100px;
-      left: 65px;
+      top: 0px;
+      left: 0;
+      right: 0;
       transform: rotate(90deg);
+      color: blue;
     }

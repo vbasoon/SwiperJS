@@ -1,6 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
       direction: 'vertical',
-      loop: true,
+      //loop: true,
       slidesPerView: 4,
       
       
