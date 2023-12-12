@@ -7,7 +7,7 @@
 }
 
 body {
-  /* background-color: #111; */
+  background-color: aquamarine;
   font-family: 'Roboto', sans-serif;
   /* color: #fff; */
   padding: 150px 0;
@@ -35,23 +35,15 @@ button {
   font-size: 12px;
 }
 
-.slider-container {
-  min-width: 1200px;
-  padding: 0 15px;
-  position: relative;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .section-slider {
   height: 500px;
-  background-color: aquamarine;
+  
   padding: 20px;
 }
 .swiper-container {
   display: flex;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1057px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -63,19 +55,7 @@ button {
 }
 
 
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
+    
 
     .swiper-slide {
       text-align: center;
@@ -93,10 +73,7 @@ button {
       object-fit: cover;
     }
 
-    body {
-      background: #000;
-      color: #000;
-    }
+    
 
     .swiper {
       width: 100%;
@@ -111,8 +88,8 @@ button {
     }
 
     .mySwiper2 {
-      height: 80%;
-      width: 100%;
+      height: 502px;
+      width: 868px;
       margin-right: 20px;
     }
 
@@ -124,8 +101,8 @@ button {
     }
 
     .mySwiper .swiper-slide {
-      width: 25%;
-      height: 100%;
+      width: 162px;
+      height: 96px;
       opacity: 0.4;
     }
 
@@ -146,7 +123,7 @@ button {
       align-items: center;
       position: absolute;
       top: 0;
-      width: 150px;
+      width: 100%;
       min-height: 850px;
       
       border: 2px solid red;
@@ -161,7 +138,7 @@ button {
 
     .swiper-button-prev {
       position: absolute;
-      top: 30px;
+      top: 0px;
       left: 60px;
       transform: rotate(90deg);
     }
