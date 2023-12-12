@@ -36,7 +36,9 @@ button {
 }
 
 .section-slider {
+  max-width: 1056px;
   height: 500px;
+  margin: 0 auto;
   
   padding: 20px;
 }
