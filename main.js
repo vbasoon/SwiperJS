@@ -6,7 +6,15 @@ var swiper = new Swiper(".mySwiper", {
       
     });
     var swiper2 = new Swiper(".mySwiper2", {
-      loop: true,
+      loop: false,
+      freemode: true,
+      effect: 'fade',
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true
+      },
+      mouseWheel: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -14,4 +22,8 @@ var swiper = new Swiper(".mySwiper", {
       thumbs: {
         swiper: swiper,
       },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
     });
