@@ -22,8 +22,9 @@ ul {
 }
 
 img {
+  display: block;
   width: 100%;
-  height: 92px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -46,12 +47,15 @@ button {
 
 .swiper-container {
   display: flex;
+  max-height: 502px;
   gap: 30px;
+  min-width: 0;
   
   
 }
 
 .swiper-slide {
+  max-width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -65,9 +69,9 @@ button {
 
 /* -------- Slider 1 --------- */
 
-.mySwiper2 {
+.mySwiper2 .swiper-wrapper {
   width: 868px;
-  height: 502px;
+  height: 100%;
   
 }
 
@@ -170,10 +174,85 @@ button {
 /*------- Slider pagination ------*/
 
 .swiper-pagination {
-  position: absolute;
-  display: block;
-  border: 2px solid green;
-  top: -100px;
+  display: none;
+  position: static;
+  max-width: 100%;
 }
 
+span .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  
+}
+
+span.swiper-pagination-bullet-active {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 2px solid #2D69F1;
+}
+
+
+
 /*------- Media Quaries ----------*/
+@media screen and (max-width:768px) {
+
+.swiper-container {
+  gap: 0;
+  height: calc(80% - 100px);
+}
+
+.mySwiper .swiper-wrapper {
+  display: none;
+  
+}
+
+.swiper-slide img {
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+.swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+
+span .swiper-pagination-bullet {
+ flex-shrink: 1;
+  
+}
+
+}
+
+@media screen and (max-width:600px) {
+
+.swiper-container {
+  
+  max-height: 302px;
+}
+}
+
+@media screen and (max-width:500px) {
+
+.swiper-container {
+  
+  max-height: 252px;
+}
+}
+
+@media screen and (max-width:390px) {
+
+.swiper-container {
+  height: 202px;
+  
+}
+}
+
